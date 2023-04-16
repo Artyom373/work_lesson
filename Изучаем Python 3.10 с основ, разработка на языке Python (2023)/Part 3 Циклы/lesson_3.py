@@ -36,12 +36,11 @@ temp =[1,2,3,4,5,6,7,]
 vals = [1,2,3,4,5,6,7,8,9,10]
 sum = 0
 i = 0
-
 while i < len(vals):
     if vals[i] % 2 == 0:
         continue
     else:
-        sum+=vals[i]
+        sum=vals[i]+sum
     if sum > 10:
         break
 print(sum)
